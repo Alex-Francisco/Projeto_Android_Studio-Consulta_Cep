@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgcont1"
+        android:layout_width="230dp"
+        android:layout_height="165dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/conteudo_bg" />
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="INFORME O CEP:"
+        android:textColor="#eecc3f"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtCep"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/conteudo_bg"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#4193c3" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/edtCep"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/botaoazuloval"
+        android:fontFamily="@font/lato_bold"
+        android:text="CONSULTAR"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/bgcont2"
+        android:layout_width="275dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/conteudo_bg"
+        android:layout_below="@id/btnConsultar"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_below="@id/btnConsultar"
+        android:text="RESULTADO:"
+        android:textColor="#eecc3f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtResposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_below="@id/txtResultado"
+        android:text=""
+        app:srcCompat="@drawable/conteudo_bg"
+        android:textColor="#4191c4"
+        android:textSize="16sp"
+        android:shadowColor="#1e71a5"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"/>
+
+</RelativeLayout>
